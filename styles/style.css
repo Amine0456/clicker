@@ -1,0 +1,15 @@
+/* styles.css */
+.medieval-bg {
+    background-image: url("Assets\wolfgang-hasselmann-pVr6wvUneMk-unsplash.jpg"); /* Image de fond */
+    background-size: cover; /* Redimensionner l'image pour remplir tout le conteneur */
+    background-position: center; /* Centrer l'image de fond */
+    color: white; /* Texte blanc pour contraster avec le fond */
+}
+
+.resources {
+    margin-bottom: 20px;
+}
+
+.shop {
+    margin-top: 20px;
+}
