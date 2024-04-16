@@ -1,9 +1,5 @@
-/* styles.css */
-.medieval-bg {
-    background-image: url("Assets\wolfgang-hasselmann-pVr6wvUneMk-unsplash.jpg"); /* Image de fond */
-    background-size: cover; /* Redimensionner l'image pour remplir tout le conteneur */
-    background-position: center; /* Centrer l'image de fond */
-    color: white; /* Texte blanc pour contraster avec le fond */
+.medieval-text {
+    color: black; 
 }
 
 .resources {
@@ -12,4 +8,21 @@
 
 .shop {
     margin-top: 20px;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button-container button {
+    width: 100%; 
+    flex-grow: 1; 
+}
+
+.button-container img {
+    max-width: 50px; 
+    height: auto;
+    margin-top: 5px; 
 }

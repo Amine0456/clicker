@@ -4,31 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jeu Clicker - Edition Medieval</title>
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <div class="container-fluid medieval-bg">
+    <div class="container-fluid medieval-text">
         <div class="container">
-            <h1 class="text-center text-white">Jeu Clicker - Edition Medieval</h1>
+            <h1 class="text-center">Gold Rush</h1>
             <div class="resources">
                 <p class="text-center">Or : <span id="points">0</span></p>
             </div>
             <div class="row justify-content-center">
-                <button id="clickButton" class="btn btn-warning">Miner de l'or !</button>
+                <div class="button-container">
+                    <button id="clickButton" class="btn btn-warning">
+                        Miner de l'or !
+                        <img src="Assets/pixel-art-bitcoin-mining-pioche-investissement-dans-icone-crypto-monnaies-pour-jeu-8-bits-ba-blanc_360488-219.avif" alt="Pioche btc">
+                    </button>
+                </div>
             </div>
             <div class="shop mt-4">
-                <h2 class="text-center text-white">Boutique de Blacksmith</h2>
+                <h2 class="text-center">Boutique de Blacksmith</h2>
                 <div class="row justify-content-center">
-                    <button id="buyMine" class="btn btn-success mr-2">Acheter une mine d'or (+1 Gold/click)</button>
-                    <button id="buyMerchant" class="btn btn-info">Embaucher un  Marchand (+2 Gold/click)</button>
+                    <div class="button-container">
+                        <button id="buyMine" class="btn btn-success mr-2">
+                            Acheter une mine d'or (+1 Gold/click)
+                            <img src="Assets/9877992-pixel-art-mining-cart-with-gold-vector-icon-for-8bit-game-on-white-background-vectoriel.jpg" alt="Mine d'or">
+                        </button>
+                    </div>
+                    <div class="button-container">
+                        <button id="buyMineur" class="btn btn-info">
+                            Embaucher un  Mineur (x2 Gold/seconde)
+                            <img src="Assets/images.png" alt="Mineur qui mine">
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Bootstrap JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

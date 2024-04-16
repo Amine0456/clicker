@@ -10,19 +10,19 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     const clickButton = document.getElementById('clickButton');
-    const buyElementButton = document.getElementById('buyElement');
-    const buyBonusButton = document.getElementById('buyBonus');
+    const buyElementButton = document.getElementById('buyMine');
+    const buyBonusButton = document.getElementById('buyMineur');
 
     clickButton.addEventListener('click', handleClick);
-    buyElementButton.addEventListener('click', buyElement);
-    buyBonusButton.addEventListener('click', buyBonus);
+    buyElementButton.addEventListener('click', buyMine);
+    buyBonusButton.addEventListener('click', buyMineur);
 
     function handleClick() {
         points += clickValue;
         updatePointsDisplay();
     }
 
-    function buyElement() {
+    function buyMine() {
         if (points >= 10) {
             points -= 10;
             clickValue += 1;
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    function buyBonus() {
+    function buyMineur() {
         if (points >= 20) {
             points -= 20;
             autoValue += 2;
