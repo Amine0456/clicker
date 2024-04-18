@@ -21,6 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const buyMine5Button = document.getElementById('buyMine5');
     const buyMine6Button = document.getElementById('buyMine6');
     const buyMine7Button = document.getElementById('buyMine7');
+    const clickButtonImage = clickButton.querySelector('img');
 
 
     clickButton.addEventListener('click', handleClick);
@@ -144,6 +145,13 @@ document.addEventListener('DOMContentLoaded', function () {
         clicksInLastMinute = 0;
         updateClicksPerMinuteDisplay();
     }
+    clickButton.addEventListener('mousedown', function() {
+        clickButtonImage.src = 'Assets/Pioche_en_diamant (1).webp';
+    });
+
+    clickButton.addEventListener('mouseup', function() {
+        clickButtonImage.src = 'Assets/Pioche_en_diamant.webp';
+    });
 
     minuteTimer = setInterval(resetClicksInLastMinute, 60000);
 
