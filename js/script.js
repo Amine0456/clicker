@@ -2,7 +2,10 @@ document.addEventListener('DOMContentLoaded', function() {
     let points = 0;
     let clickValue = 1;
     let autoValue = 0;
+    let clicksInLastMinute = 0;
+    let clicksPerMinute = 0;
     let autoInterval;
+    let minuteTimer;
 
     if (localStorage.getItem('points')) {
         points = parseInt(localStorage.getItem('points'));
@@ -19,7 +22,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function handleClick() {
         points += clickValue;
+        clicksInLastMinute++;
         updatePointsDisplay();
+        updateClicksPerMinuteDisplay(); 
     }
 
     function buyMine() {
@@ -54,4 +59,18 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('points').innerText = points;
         localStorage.setItem('points', points);
     }
+
+    function updateClicksPerMinuteDisplay() {
+        document.getElementById('clicksPerMinute').innerText = clicksPerMinute; 
+    }
+
+    function resetClicksInLastMinute() {
+        clicksPerMinute = clicksInLastMinute;
+        clicksInLastMinute = 0;
+        updateClicksPerMinuteDisplay();
+    }
+
+    minuteTimer = setInterval(resetClicksInLastMinute, 60000);
+
+    updateClicksPerMinuteDisplay();
 });

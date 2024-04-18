@@ -13,32 +13,58 @@
             <h1 class="text-center">Gold Rush</h1>
             <div class="resources">
                 <p class="text-center">Or : <span id="points">0</span></p>
+                <p class="text-center">Clics par minute : <span id="clicksPerMinute">0</span></p> 
             </div>
             <div class="row justify-content-center">
-                <div class="button-container">
-                    <button id="clickButton" class="btn btn-warning">
-                        Miner de l'or !
-                        <img src="Assets/pixel-art-bitcoin-mining-pioche-investissement-dans-icone-crypto-monnaies-pour-jeu-8-bits-ba-blanc_360488-219.avif" alt="Pioche btc">
-                    </button>
-                </div>
-            </div>
-            <div class="shop mt-4">
-                <h2 class="text-center">Boutique de Blacksmith</h2>
-                <div class="row justify-content-center">
+                <div class="col-md-8">
                     <div class="button-container">
-                        <button id="buyMine" class="btn btn-success mr-2">
-                            Acheter une mine d'or (+1 Gold/click)
-                            <img src="Assets/9877992-pixel-art-mining-cart-with-gold-vector-icon-for-8bit-game-on-white-background-vectoriel.jpg" alt="Mine d'or">
-                        </button>
-                    </div>
-                    <div class="button-container">
-                        <button id="buyMineur" class="btn btn-info">
-                            Embaucher un  Mineur (x2 Gold/seconde)
-                            <img src="Assets/images.png" alt="Mineur qui mine">
+                        <button id="clickButton" class="btn btn-warning">
+                            Miner de l'or !
+                            <img src="Assets/pixel-art-bitcoin-mining-pioche-investissement-dans-icone-crypto-monnaies-pour-jeu-8-bits-ba-blanc_360488-219.avif" alt="Pioche btc">
                         </button>
                     </div>
                 </div>
+                <div class="col-md-3">
+                    <div class="shop mt-4">
+                        <h2 class="text-center">Boutique de Blacksmith</h2>
+                        <div class="row">
+                            <div class="col-12 mb-2">
+                                <button id="buyMine" class="btn btn-success btn-block">
+                                    Acheter une mine d'or (+1 Gold/click)
+                                    <img src="" >
+                                </button>
+                            </div>
+                            <div class="col-12">
+                                <button id="buyMineur" class="btn btn-info btn-block">
+                                    Embaucher un Mineur (x2 Gold/seconde)
+                                    <img src="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                    <div class="d-flex flex-column align-items-center">
+                        <button class="btn btn-outline-secondary btn-square mb-2">
+                            <img src="" alt="Bouton 1">
+                        </button>
+                        <span class="btn-title text-center "></span>
+                    </div>
+                    <div class="d-flex flex-column align-items-center mt-2">
+                        <button class="btn btn-outline-secondary btn-square mb-2">
+                            <img src="" alt="Bouton 2">
+                        </button>
+                        <span class="btn-title"></span>
+                    </div>
+                    <div class="d-flex flex-column align-items-center mt-2">
+                        <button class="btn btn-outline-secondary btn-square mb-2">
+                            <img src="" alt="Bouton 2">
+                        </button>
+                        <span class="btn-title"></span>
+                    </div>
+                </div>
             </div>
+            
         </div>
     </div>
 

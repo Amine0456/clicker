@@ -1,28 +1,14 @@
-.medieval-text {
-    color: black; 
+body {
+    background-color: #e0e0e0;
 }
 
-.resources {
-    margin-bottom: 20px;
-}
-
-.shop {
+.container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
     margin-top: 20px;
 }
 
-.button-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.button-container button {
-    width: 100%; 
-    flex-grow: 1; 
-}
-
-.button-container img {
-    max-width: 50px; 
-    height: auto;
-    margin-top: 5px; 
+button[disabled] {
+    opacity: 0.6;
 }
