@@ -1,6 +1,10 @@
 .medieval-text {
     color: black;
 }
+.text-center1 {
+    font-size: 100px;
+    text-align: center;
+}
 
 .resources {
     margin-bottom: 20px;
@@ -81,4 +85,49 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+/* Styles pour les cards */
+.card-deck {
+    margin-top: 20px;
+}
+
+.card {
+    border: none;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-img-top {
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.card-title {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn-block {
+    width: 80%;
+    margin-top: 15px;
+    align-self: center;
+}
+
+.btn-block:hover {
+    background-color: #28a745; /* Changez la couleur selon vos préférences */
+}
+.card-img-top {
+    max-height: 400px; /* Augmentez cette valeur pour agrandir l'image */
+    object-fit: contain;
+    margin: auto;
+    display: block;
 }

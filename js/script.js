@@ -3,6 +3,9 @@ document.addEventListener('DOMContentLoaded', function () {
     let clickValue = 1;
     let autoValue = 0;
     let autoInterval;
+    let coalLevel = 1;
+    let copperLevel = 1;
+    let ironLevel = 1;
 
     if (localStorage.getItem('points')) {
         points = parseInt(localStorage.getItem('points'));
@@ -13,9 +16,24 @@ document.addEventListener('DOMContentLoaded', function () {
     const buyElementButton = document.getElementById('buyMine');
     const buyBonusButton = document.getElementById('buyMineur');
 
+    const coalCard = document.querySelector('.coal-card');
+    const copperCard = document.querySelector('.copper-card');
+    const ironCard = document.querySelector('.iron-card');
+
+
+    coalCard.addEventListener('click', () => handleCardClick(1, coalLevel));
+    copperCard.addEventListener('click', () => handleCardClick(2, copperLevel));
+    ironCard.addEventListener('click', () => handleCardClick(3, ironLevel));
+
     clickButton.addEventListener('click', handleClick);
     buyElementButton.addEventListener('click', buyMine);
     buyBonusButton.addEventListener('click', buyMineur);
+
+    function handleCardClick(value, level) {
+        const pointsToAdd = value * level; 
+        points += pointsToAdd;
+        updatePointsDisplay();
+    }
 
     function handleClick() {
         points += clickValue;
@@ -26,7 +44,9 @@ document.addEventListener('DOMContentLoaded', function () {
         if (points >= 10) {
             points -= 10;
             clickValue += 1;
+            coalLevel += 1;
             updatePointsDisplay();
+            showParticleOnBuy();
         } else {
             alert('Pas assez de points!');
         }
@@ -55,12 +75,10 @@ document.addEventListener('DOMContentLoaded', function () {
         localStorage.setItem('points', points);
     }
 
-    // Nouvelle fonction pour le bouton "Miner de l'or !"
     function handleMineAction() {
-        points += clickValue;  // Ajoutez une valeur spécifique pour "Miner de l'or !"
+        points += clickValue;
         updatePointsDisplay();
     }
 
-    // Associez la nouvelle fonction au clic du bouton
     clickButton.addEventListener('click', handleMineAction);
 });
