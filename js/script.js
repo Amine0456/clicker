@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     let points = 0;
     let clickValue = 1;
     let autoValue = 0;

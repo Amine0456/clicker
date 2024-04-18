@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles/style.css">
 </head>
+
 <body>
     <div class="container-fluid medieval-text">
         <div class="container">
@@ -14,37 +16,73 @@
             <div class="resources">
                 <p class="text-center">Or : <span id="points">0</span></p>
             </div>
-            <div class="row justify-content-center">
-                <div class="button-container">
-                    <button id="clickButton" class="btn btn-warning">
-                        Miner de l'or !
-                        <img src="Assets/pixel-art-bitcoin-mining-pioche-investissement-dans-icone-crypto-monnaies-pour-jeu-8-bits-ba-blanc_360488-219.avif" alt="Pioche btc">
-                    </button>
-                </div>
-            </div>
-            <div class="shop mt-4">
-                <h2 class="text-center">Boutique de Blacksmith</h2>
-                <div class="row justify-content-center">
+            <div class="row">
+                <div class="col-8">
                     <div class="button-container">
-                        <button id="buyMine" class="btn btn-success mr-2">
-                            Acheter une mine d'or (+1 Gold/click)
-                            <img src="Assets/9877992-pixel-art-mining-cart-with-gold-vector-icon-for-8bit-game-on-white-background-vectoriel.jpg" alt="Mine d'or">
+                        <button id="clickButton" class="btn btn-warning">
+                            Miner de l'or !
+                            <img src="Assets/pixel-art-bitcoin-mining-pioche-investissement-dans-icone-crypto-monnaies-pour-jeu-8-bits-ba-blanc_360488-219.avif" alt="Pioche btc">
                         </button>
                     </div>
-                    <div class="button-container">
-                        <button id="buyMineur" class="btn btn-info">
-                            Embaucher un  Mineur (x2 Gold/seconde)
-                            <img src="Assets/images.png" alt="Mineur qui mine">
-                        </button>
+                </div>
+                <div class="col-4">
+                    <div class="shop">
+                        <h2 class="text-center">Boutique de Blacksmith</h2>
+                        <div class="button-container">
+                            <div class="row mb-2">
+                                <div class="col-6">
+                                    <button id="buyMine" class="btn btn-success btn-block">
+                                        Acheter une mine d'or (+1 Gold/click)
+                                        <img src="Assets/9877992-pixel-art-mining-cart-with-gold-vector-icon-for-8bit-game-on-white-background-vectoriel.jpg" alt="Mine d'or">
+                                    </button>
+                                </div>
+                                <div class="col-6">
+                                    <button id="buyMineur" class="btn btn-info btn-block">
+                                        Embaucher un Mineur (x2 Gold/seconde)
+                                        <img src="Assets/images.png" alt="Mineur qui mine">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row mb-2">
+                                <div class="col-6">
+                                    <button id="buyPickaxe" class="btn btn-secondary btn-block">
+                                        Acheter une pioche (+5 Gold/click)
+                                        <img src="Assets/pickaxe.png" alt="Pioche">
+                                    </button>
+                                </div>
+                                <div class="col-6">
+                                    <button id="buyTreasureMap" class="btn btn-primary btn-block">
+                                        Acheter une carte au trésor (+10 Gold/click)
+                                        <img src="Assets/treasure-map.png" alt="Carte au trésor">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <button id="buyGoblin" class="btn btn-danger btn-block">
+                                        Embaucher un gobelin (x3 Gold/seconde)
+                                        <img src="Assets/goblin.png" alt="Gobelin">
+                                    </button>
+                                </div>
+                                <div class="col-6">
+                                    <button id="buyDragon" class="btn btn-dark btn-block">
+                                        Acheter un dragon (x5 Gold/seconde)
+                                        <img src="Assets/dragon.png" alt="Dragon">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
 </body>
+
 </html>

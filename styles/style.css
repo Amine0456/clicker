@@ -1,5 +1,5 @@
 .medieval-text {
-    color: black; 
+    color: black;
 }
 
 .resources {
@@ -17,12 +17,12 @@
 }
 
 .button-container button {
-    width: 100%; 
-    flex-grow: 1; 
+    width: 100%;
+    flex-grow: 1;
 }
 
 .button-container img {
-    max-width: 50px; 
+    max-width: 50px;
     height: auto;
-    margin-top: 5px; 
+    margin-top: 5px;
 }
