@@ -54,4 +54,13 @@ document.addEventListener('DOMContentLoaded', function () {
         document.getElementById('points').innerText = points;
         localStorage.setItem('points', points);
     }
+
+    // Nouvelle fonction pour le bouton "Miner de l'or !"
+    function handleMineAction() {
+        points += clickValue;  // Ajoutez une valeur spécifique pour "Miner de l'or !"
+        updatePointsDisplay();
+    }
+
+    // Associez la nouvelle fonction au clic du bouton
+    clickButton.addEventListener('click', handleMineAction);
 });

@@ -18,11 +18,67 @@
 
 .button-container button {
     width: 100%;
-    flex-grow: 1;
+    margin-bottom: 10px; 
 }
 
 .button-container img {
     max-width: 50px;
     height: auto;
     margin-top: 5px;
+}
+
+.btn-circle {
+    border-radius: 50%;
+    width: 500px;
+    height: 800px;
+    font-size: 18px;
+    background-color: yellow;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column; 
+}
+
+.btn-circle img {
+    max-width: 80px;
+    height: auto;
+    margin-top: 10px;
+}
+
+.click-button-container {
+    margin-right: 10%;
+}
+
+.col-3 {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.click-button-container {
+    margin-right: 10%; 
+}
+
+.footer {
+    background-color: #343a40;
+    color: white;
+    padding: 10px 0;
+    text-align: center; 
+}
+
+.footer button {
+    width: 100%;
+    margin-top: 5px;
+}
+
+.footer .container-fluid {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
