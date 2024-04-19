@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jeu Clicker - Edition Medieval</title>
+    <title>Jeu Clicker</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles/style.css">
 </head>
@@ -12,18 +12,16 @@
 <body>
     <div class="container-fluid medieval-text">
         <div class="container">
-            <h1 class="text-center">Gold Rush</h1>
+            <h1 class="text-center">MineRush</h1>
             <div class="resources">
-                <p class="text-center">Or : <span id="points">0</span></p>
-                <p class="text-center">Clics par minute : <span id="clicksPerMinute">0</span></p>
+                <p class="text-center">Minerais : <span id="points">0</span></p>
+                <p class="text-center">Minerais par seconde : <span id="mineraisParSeconde">0</span></p>
             </div>
             <div class="row justify-content-center">
                 <div class="col-md-8">
                     <div class="button-container">
                         <button id="clickButton" class="btn btn-warning">
-                            Miner de l'or !
-                            <img src="Assets/pixel-art-bitcoin-mining-pioche-investissement-dans-icone-crypto-monnaies-pour-jeu-8-bits-ba-blanc_360488-219.avif"
-                                alt="Pioche btc">
+                            Miner de l'or ! <img src="Assets/Pioche_en_diamant.webp">
                         </button>
                     </div>
                 </div>
@@ -32,50 +30,24 @@
                         <h2 class="text-center mb-2">Boutique</h2>
                         <div class="row">
                             <div class="col-12 mb-2">
-                                <button id="buyMine" class="btn btn-outline-warning btn-block">
-                                    Acheter une mine d'or (+1 Gold/click)
-                                    <img src="">
+                                <button id="buyMine" class="btn btn-outline-warning btn-block">Acheter Coal<img src="">
                                 </button>
                             </div>
                             <div class="col-12 mb-2">
                                 <button id="buyMineur" class="btn btn-outline-warning btn-block">
-                                    Embaucher un Mineur (x2 Gold/seconde)
+                                    Acheter une pioche en fer
                                     <img src="">
                                 </button>
                             </div>
                             <div class="col-12 mb-2">
                                 <button id="buyMine2" class="btn btn-outline-warning btn-block">
-                                    Acheter une deuxième mine (+2 Gold/click)
+                                    Acheter Iron
                                     <img src="">
                                 </button>
                             </div>
                             <div class="col-12 mb-2">
                                 <button id="buyMine3" class="btn btn-outline-warning btn-block">
-                                    Acheter une troisième mine (+3 Gold/click)
-                                    <img src="">
-                                </button>
-                            </div>
-                            <div class="col-12 mb-2">
-                                <button id="buyMine4" class="btn btn-outline-warning btn-block">
-                                    Acheter une quatrième mine (+4 Gold/click)
-                                    <img src="">
-                                </button>
-                            </div>
-                            <div class="col-12 mb-2">
-                                <button id="buyMine5" class="btn btn-outline-warning btn-block">
-                                    Acheter une cinquieme mine (+5 Gold/click)
-                                    <img src="">
-                                </button>
-                            </div>
-                            <div class="col-12 mb-2">
-                                <button id="buyMine6" class="btn btn-outline-warning btn-block">
-                                    Acheter une sixtième mine (+6 Gold/click)
-                                    <img src="">
-                                </button>
-                            </div>
-                            <div class="col-12 mb-2">
-                                <button id="buyMine7" class="btn btn-outline-warning btn-block">
-                                    Acheter une septième mine (+7 Gold/click)
+                                    Acheter Copper
                                     <img src="">
                                 </button>
                             </div>
@@ -84,27 +56,13 @@
                 </div>
                 <div class="col-md-1">
                     <div class="d-flex flex-column align-items-center">
-                        <button class="btn btn-outline-secondary btn-square mb-2">
-                            <img src="" alt="Bouton 1">
+                        <button class="btn btn-outline-secondary btn-square mb-2" id="resetButton">
+                            <img src="Assets/Lingot_d%27or.png">
                         </button>
-                        <span class="btn-title text-center "></span>
+                        <span class="btn-title text-center">Reset</span>
                     </div>
-                    <div class="d-flex flex-column align-items-center mt-2">
-                        <button class="btn btn-outline-secondary btn-square mb-2">
-                            <img src="" alt="Bouton 2">
-                        </button>
-                        <span class="btn-title"></span>
-                    </div>
-                    <div class="d-flex flex-column align-items-center mt-2">
-                        <button class="btn btn-outline-secondary btn-square mb-2">
-                            <img src="" alt="Bouton 2">
-                        </button>
-                        <span class="btn-title"></span>
-                    </div>
-
                 </div>
             </div>
-
         </div>
     </div>
 
