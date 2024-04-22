@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const buyPickaxeNetheriteButton = document.getElementById('buyPickaxeNetherite');
     const buyBonusButton = document.getElementById('buyMineur');
     const buyTorcheButton = document.getElementById('buyTorche');
+    const resetButton = document.getElementById('reset');
 
     clickButton.addEventListener('click', handleClick);
     buyElementButton.addEventListener('click', buyMine);
@@ -24,6 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
     buyPickaxeNetheriteButton.addEventListener('click', buyPickaxeNetherite);
     buyBonusButton.addEventListener('click', buyMineur);
     buyTorcheButton.addEventListener('click', buyTorche);
+    resetButton.addEventListener('click', reset);
 
     function handleClick() {
         points += clickValue;
@@ -102,6 +104,18 @@ document.addEventListener('DOMContentLoaded', function() {
         } else {
             alert('Pas assez de points!');
         }
+    }
+
+    function reset() {
+        points = 0;
+        clickValue = 1;
+        autoValue = 0;
+        clearInterval(autoInterval);
+        clicksInLastMinute = 0;
+        clicksPerMinute = 0;
+        updatePointsDisplay();
+        updateClicksPerMinuteDisplay();
+        alert('Réinitialisation effectuée !');
     }
 
     function updatePointsDisplay() {
