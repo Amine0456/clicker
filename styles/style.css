@@ -32,3 +32,9 @@ body {
     height: auto;
     margin-top: 5px; 
 }
+
+#resetButton img{
+    max-width: 50px; 
+    height: auto;
+    margin-top: 5px;
+}

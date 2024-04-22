@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const buyPickaxeNetheriteButton = document.getElementById('buyPickaxeNetherite');
     const buyBonusButton = document.getElementById('buyMineur');
     const buyTorcheButton = document.getElementById('buyTorche');
-    const resetButton = document.getElementById('reset');
+    const resetGameButton = document.getElementById('resetButton');
 
     clickButton.addEventListener('click', handleClick);
     buyElementButton.addEventListener('click', buyMine);
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
     buyPickaxeNetheriteButton.addEventListener('click', buyPickaxeNetherite);
     buyBonusButton.addEventListener('click', buyMineur);
     buyTorcheButton.addEventListener('click', buyTorche);
-    resetButton.addEventListener('click', reset);
+    resetGameButton.addEventListener('click', resetButton);
 
     function handleClick() {
         points += clickValue;
@@ -106,7 +106,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    function reset() {
+    function resetButton() {
         points = 0;
         clickValue = 1;
         autoValue = 0;
