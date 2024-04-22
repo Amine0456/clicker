@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const buyPickaxeDiamondButton = document.getElementById('buyPickaxeDiamond');
     const buyPickaxeNetheriteButton = document.getElementById('buyPickaxeNetherite');
     const buyBonusButton = document.getElementById('buyMineur');
-    const buyTorche = document.getElementById('BuyTorche');
+    const buyTorcheButton = document.getElementById('buyTorche');
 
     clickButton.addEventListener('click', handleClick);
     buyElementButton.addEventListener('click', buyMine);
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
     buyPickaxeDiamondButton.addEventListener('click', buyPickaxeDiamond);
     buyPickaxeNetheriteButton.addEventListener('click', buyPickaxeNetherite);
     buyBonusButton.addEventListener('click', buyMineur);
-    buyTorche.addEventListener('click',BuyTorche);
+    buyTorcheButton.addEventListener('click', buyTorche);
 
     function handleClick() {
         points += clickValue;
@@ -45,6 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
             points -= 50;
             clickValue += 5;
             updatePointsDisplay();
+            buyPickaxeIronButton.disabled = true;
         } else {
             alert('Pas assez de points!');
         }
@@ -55,6 +56,7 @@ document.addEventListener('DOMContentLoaded', function() {
             points -= 100;
             clickValue += 10;
             updatePointsDisplay();
+            buyPickaxeDiamondButton.disabled = true;
         } else {
             alert('Pas assez de points!');
         }
@@ -65,6 +67,7 @@ document.addEventListener('DOMContentLoaded', function() {
             points -= 500;
             clickValue += 50;
             updatePointsDisplay();
+            buyPickaxeNetheriteButton.disabled = true;
         } else {
             alert('Pas assez de points!');
         }
@@ -93,7 +96,7 @@ document.addEventListener('DOMContentLoaded', function() {
             points -= 1500;
             autoValue += 4;
             if (!autoInterval) {
-                autoInterval = setInterval(autoClick, 1000);
+                autoInterval = setInterval(autoClick, 1500);
             }
             updatePointsDisplay();
         } else {
