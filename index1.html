@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu Clicker</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <div class="container-fluid medieval-text">
+        <div class="container">
+            <h1 class="text-center">MineRush</h1>
+            <div class="resources">
+                <p class="text-center">Minerais : <span id="points">0</span></p>
+                <p class="text-center">Minerais par seconde : <span id="mineraisParSeconde">0</span></p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="button-container">
+                        <button id="clickButton" class="btn btn-warning">
+                            Miner de l'or ! <img src="Assets/Pioche_en_diamant.webp">
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="shop mt-4">
+                        <h2 class="text-center mb-2">Boutique</h2>
+                        <div class="row">
+                            <div class="col-12 mb-2">
+                                <button id="buyMine" class="btn btn-outline-warning btn-block">Acheter Coal<img src="">
+                                </button>
+                            </div>
+                            <div class="col-12 mb-2">
+                                <button id="buyMineur" class="btn btn-outline-warning btn-block">
+                                    Acheter une pioche en fer
+                                    <img src="">
+                                </button>
+                            </div>
+                            <div class="col-12 mb-2">
+                                <button id="buyMine2" class="btn btn-outline-warning btn-block">
+                                    Acheter Iron
+                                    <img src="">
+                                </button>
+                            </div>
+                            <div class="col-12 mb-2">
+                                <button id="buyMine3" class="btn btn-outline-warning btn-block">
+                                    Acheter Copper
+                                    <img src="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                    <div class="d-flex flex-column align-items-center">
+                        <button class="btn btn-outline-secondary btn-square mb-2" id="resetButton">
+                            <img src="Assets/Lingot_d%27or.png">
+                        </button>
+                        <span class="btn-title text-center">Reset</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
