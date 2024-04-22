@@ -1,11 +1,10 @@
 body {
-    background-image: url('Assets/minecraft-caves-cliffs-snapshot-21w06a.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
+        background-image: url('C:/Users/aouga/Desktop/clicker/Assets/Mccavern.webp');
+        color: white;
 }
 
 .medieval-text {
-    color: black; 
+    color: white; 
 }
 
 .resources {

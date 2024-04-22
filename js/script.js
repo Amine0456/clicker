@@ -37,6 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
             points -= 10;
             clickValue += 2;
             updatePointsDisplay();
+            buyElementButton.disabled = true;
         } else {
             alert('Pas assez de points!');
         }
